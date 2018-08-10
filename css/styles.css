@@ -1,0 +1,262 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+  background-color: #F1EDEE;
+}
+
+.my-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/*Header*/
+
+header {
+  background-color: #DB5461;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rentflix {
+  font-family: 'Do Hyeon', sans-serif;
+  display: inline-block;
+  color: #F1EDEE;
+  text-shadow: 3px 2px 2px black;
+  margin: 0px;
+  cursor: pointer;
+}
+
+#name:hover {
+  color: black;
+  text-shadow: none;
+}
+
+nav {
+  display: flex;
+}
+
+.cat-contain {
+  display: inline-block;
+  padding-left: .75rem;
+}
+
+.cat-contain a,
+.cat-contain a:hover {
+  font-size: 1.5rem;
+  color: #F1EDEE;
+  text-shadow: 2px 1px 1px black;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+/*Active class for easy navigation*/
+
+.on {
+  text-decoration: underline;
+}
+
+.cat-contain h1 {
+  font-size: 1.5rem;
+  color: #F1EDEE;
+  text-shadow: 2px 1px 1px black;
+  margin: 0;
+  cursor: pointer;
+}
+
+.cat-contain h1:hover {
+  color: black;
+  text-shadow: none;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+}
+
+#search i {
+  color: #F1EDEE;
+  text-shadow: 2px 1px 1px black;
+  padding-right: .25rem;
+}
+
+/*End Header*/
+
+/*Body*/
+
+  /*Catalog*/
+  #catalog {
+    overflow-y: scroll;
+  }
+
+  section h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .catalog-title a,
+  .catalog-title a:hover,
+  .catalog-title a:focus {
+    color: black !important;
+    cursor: pointer !important;
+  }
+
+  .catalog-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    list-style: none;
+    animation: upfade 2s;
+  }
+
+  @keyframes upfade {
+    from {
+      opacity: 0;
+      margin-top: 50px;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: 0px;
+    }
+  }
+
+  .catalog-items li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .catalog-items a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .catalog-items a:hover {
+    color: black;
+    text-decoration: underline black;
+  }
+
+  .catalog-items li a img {
+    box-shadow: 2px 2px 3px black;
+  }
+
+  /*---*/
+
+  /*Details*/
+
+  #details {
+    display: flex;
+    justify-content: center;
+    animation: rightfade 2.5s;
+  }
+
+  @keyframes rightfade {
+    from {
+      opacity: 0;
+      margin-right: 100px;
+    }
+
+    to {
+      opacity: 1;
+      margin-right: 0px;
+    }
+  }
+
+  .media-image {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media-image a {
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+  }
+
+  .media-image a,
+  .media-image a:hover,
+  .media-image a:focus {
+    color: black !important;
+    cursor: pointer !important;
+  }
+
+  .media-image img {
+    height: 500px;
+    box-shadow: 6px 5px 3px #4a4a4a;
+  }
+
+  .media-details {
+    padding: 2rem;
+    font-size: 1.15rem;
+  }
+
+  /*---*/
+
+  /*Suggest*/
+
+  #suggest {
+    text-align: center;
+  }
+
+  form {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.75rem;
+    padding: 2rem;
+  }
+
+  th,
+  td {
+    padding-bottom: 1rem;
+  }
+
+  th {
+    padding-right: 2rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  #button {
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #F1EDEE;
+    text-shadow: 3px 2px 2px black;
+    cursor: pointer;
+    background: #DB5461;
+    border: none;
+  }
+
+  /*---*/
+
+/*End Body*/
+
+/*Footer*/
+
+footer {
+  display: block;
+  background-color: #DB5461;
+  text-align: center;
+  font-size: 1.15rem;
+  color: #F1EDEE;
+}
+
+footer p {
+  margin: 0;
+}
+
+/*End Footer*/
